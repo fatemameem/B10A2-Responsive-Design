@@ -167,3 +167,12 @@ body{
   top: 145px;
   right: -20px;
 }
+
+@media screen and (max-width: 992px) {
+  .header-and-banner{
+    padding: 52px 30px 0;
+  }
+  .banner{
+    flex-direction: column;
+  }
+}
