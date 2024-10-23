@@ -168,11 +168,275 @@ body{
   right: -20px;
 }
 
-@media screen and (max-width: 992px) {
+.body-section{
+  padding: 58.5px 120px 0;
+  font-family: var(--primaryFontFamily);
+}
+
+.habits-container{
+  text-align: center;
+}
+
+.habits-txt{
+  padding-bottom: 58px;
+}
+
+.headline{
+  font-size: 48px;
+  font-weight: 900;
+  margin: 14px 0;
+}
+
+.smaller-headline{
+  font-size: 28px;
+  font-weight: 900;
+  margin: 14px 0;
+}
+
+.tagline{
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFFFFF80;
+}
+
+.habits{
+  display: grid;
+  grid-template-columns: repeat(4 , 1fr);
+  justify-items: center;
+  gap: 40px;
+}
+
+.habit-img > img{
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  border: 4px solid #FFFFFF1A;
+}
+
+.habit-name{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.extra-mile{
+  background-color: var(--secondaryBackgroundColor);
+  padding: 54px 41px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 165px;
+  margin: 100px 0;
+  border-radius: 18px;
+}
+
+.extra-mile-txt{
+  width: 40%;
+}
+
+.extra-mile > .extra-mile-txt > .headline{
+  margin-left: 0;
+}
+
+.extra-mile > .extra-mile-txt > .tagline{
+  padding-bottom: 34px;
+}
+
+.extra-mile-btn{
+  background-color: var(--orangeColor);
+  color: white;
+  border: none;
+  padding: 16px 71.5px;
+  border-radius: 42px;
+}
+
+.extra-mile-img > img{
+  width: 366px;
+  height: 312px;
+  border-radius: 18px;
+}
+
+.training-txt{
+  padding-bottom: 58px;
+}
+
+.training-imgs{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+}
+
+.training-img{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.training-img > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.training-img-1 .overlay {
+  background: #06FFD280;
+  color: black;
+}
+
+.training-img-2 .overlay {
+  background: rgba(255, 0, 0, 0.4);
+  /* red overlay */
+}
+
+/* .training-img-3 .overlay,
+.training-img-4 .overlay{
+  background-color: #CCCCCC;
+  opacity: 0.1;
+} */
+.training-img-5 .overlay{
+  background: rgba(0, 255, 0, 0.3);
+  /* green overlay */
+}      
+
+.training-img-6 .overlay{
+  background: rgba(0, 0, 255, 0.3);
+  /* blue overlay */
+}
+
+.training-img-2, .training-img-4{
+  grid-column: span 2;
+}
+
+.training-img-1 > .overlay > p,
+.training-img-3>.overlay>p, 
+.training-img-5>.overlay>p,
+.training-img-6>.overlay>p{
+  position: absolute;
+  bottom: 27.5px;
+  left: 24px;
+}
+
+.training-img-2 > .overlay > p{
+  position: absolute;
+  top: 25px;
+  left: 24px;
+}
+
+.training-img-4 > .overlay > p{
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  opacity: 1!important
+}
+
+.overlay > p{
+  width: 176px;
+  height: 34px;
+}
+
+.bmi-calc-container > .bmi-calc-txt{
+  text-align: center;
+  padding: 88px 0;
+}
+
+.bmi-calc-container > .bmi-calc-chart{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  background-color: var(--secondaryBackgroundColor);
+  padding: 58.5px 120px 52px;
+  margin-bottom: 58px;
+}
+
+.bmi-table{
+  width: 100%;
+}
+
+.bmi-table th, .bmi-table td {
+  border: 1px solid #FFFFFF1A;
+  padding: 12px;
+  color: #FFFFFF80
+}
+
+.bmi-table th {
+  color: white;
+  font-weight: 700;
+}
+
+#bmi-form{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.bmi-activity{
+  grid-column: span 2;
+}
+
+#bmi-form > div > input,
+#bmi-form>div>select{
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #FFFFFF1A;
+  background-color: #FFFFFF1A;
+  color: #FFFFFF80;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the dropdown arrow */
+#bmi-form > div > select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #FFFFFF1A url('data:image/svg+xml;utf8,<svg fill="%23FFFFFF80" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 12px center;
+  padding-right: 40px;
+}
+
+.bmi-chart > .smaller-headline{
+  padding-bottom: 58px;
+}
+
+#bmi-form > *{
+  margin-right: 12px;
+}
+
+.bmi-calc > .tagline{
+  padding-bottom: 34px;
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
   .header-and-banner{
     padding: 52px 30px 0;
   }
   .banner{
     flex-direction: column;
+  }
+  .banner-txt{
+    margin-bottom: 100px;
+    gap: 28px;
+  }
+  .banner-txt > h1{
+    margin: 0;
+  }
+  .habits {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
