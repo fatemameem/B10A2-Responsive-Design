@@ -31,7 +31,7 @@ body{
   padding: 58.5px 120px 0;
 }
 
-.brand-name > p > a{
+.brand-name, .brand-name > p > a{
   font-family: var(--primaryFontFamily);
   font-weight: 800;
   color: var(--orangeColor);
@@ -473,6 +473,46 @@ body{
   font-size: 14px;
   font-weight: 400;
   color: #FFFFFF80;
+}
+
+.footer{
+  padding: 66px 120px 0;
+  background-color: #FFFFFF1A;
+}
+
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  align-items: center;
+  padding-bottom: 79px;
+  font-family: var(--primaryFontFamily);
+}
+
+.footer-container > div > ul{
+  padding-inline-start: 0;
+}
+
+.footer-container>div>ul>li{
+  margin-bottom: 20px;
+}
+
+.footer-container > div > ul > li > a{
+  color: #FFFFFF80;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.footer-container > div > p.brand-name{
+  font-size: 70px;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+.footer-txt{
+  font-size: 20px;
+  text-align: center;
+  padding: 36px 0;
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
