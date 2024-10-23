@@ -515,8 +515,8 @@ body{
   padding: 36px 0;
 }
 
-@media screen and (min-width: 576px) and (max-width: 992px) {
-  .header-and-banner{
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .header-and-banner, .body-section, .footer{
     padding: 52px 30px 0;
   }
   .banner{
@@ -531,5 +531,128 @@ body{
   }
   .habits {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .extra-mile{
+    gap: 10px;
+  }
+  .bmi-calc-container>.bmi-calc-chart{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .team-img{
+    max-width: 270px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .nav-links {
+    display: none!important;
+  }
+  .hamburger-menu{
+    display: block;
+    cursor: pointer;
+  }
+  .header-and-banner, .body-section, .footer {
+    padding: 20px 15px 0;
+  }
+
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner-txt {
+    width: 100%;
+    margin-bottom: 50px;
+    gap: 20px;
+  }
+
+  .banner-txt > h1 {
+    font-size: 48px;
+  }
+
+  .banner-txt > p.tagline {
+    font-size: 14px;
+  }
+
+  .banner-txt > .banner-btns > .btn {
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+
+  .banner-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner-img > .texts {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .txt-btm {
+    bottom: 63px;
+    left: 13px;
+  }
+
+  .txt-top {
+    top: 145px;
+    right: 40px;
+  }
+
+  .habits {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .extra-mile {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .extra-mile-txt {
+    width: 100%;
+  }
+
+  .extra-mile-img > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .training-imgs {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .training-img-2, .training-img-4 {
+    grid-column: span 1;
+  }
+
+  .bmi-calc-container > .bmi-calc-chart {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .team-imgs {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .team-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-container > div > p.brand-name {
+    font-size: 50px;
   }
 }
